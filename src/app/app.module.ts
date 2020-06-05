@@ -16,6 +16,7 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { AppRoutingModule } from './app-routing.module';
 import { FooterComponent } from './shared/footer/footer.component';
 import { AboutComponent } from './pages/about/about.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { AboutComponent } from './pages/about/about.component';
     MatSidenavModule,
     MatButtonModule,
     MatIconModule,
-    MatMenuModule
+    MatMenuModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
