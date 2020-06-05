@@ -1,0 +1,16 @@
+<mat-drawer-container class="container" autosize>
+  
+  <mat-drawer #drawer class="sidenav" mode="side">
+    <p>Poyectos</p>
+    
+  </mat-drawer>
+
+  <div class="sidenav-content">
+    <button type="button" mat-fab color="primary" (click)="drawer.toggle()">
+      <mat-icon>menu</mat-icon>
+    </button>
+  </div>
+
+  <app-header></app-header>
+
+</mat-drawer-container>
