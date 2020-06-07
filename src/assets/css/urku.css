@@ -6,8 +6,17 @@
  Licensed under  MIT 
 \* * * * * * * * * * * * * * * * * * * * */
 @charset "UTF-8";
+@import url("fontawesome-all.min.css");
+
 body {
   margin: 0;
+  background-color: #202020;
+  color: azure;
+}
+
+.icon:before {
+  font-family: 'Font Awesome 5 Brands' !important;
+  color: azure;
 }
 
 .rk-container {
@@ -53,7 +62,8 @@ body {
 }
 
 .rk-header {
-  background-color: #fff;
+  background-color: #202020;
+  color: azure;
   position: relative;
   z-index: 5;
 }
@@ -1967,7 +1977,7 @@ body {
   padding-top: .16rem;
 }
 .rk-menu__item {
-  color: #202020;
+  color:azure;
   display: inherit;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
@@ -2164,7 +2174,7 @@ body {
 }
 
 .rk-dark-color {
-  color: #202020;
+  color: azure;
 }
 
 .rk-light-color {
