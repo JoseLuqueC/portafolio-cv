@@ -1,9 +1,13 @@
+
+
 export interface InfoPagina{
-titulo?: string;
+  titulo?: string;
   email?: string;
+  nombre_corto?: string;
+  pagina_autor?: string;
   facebook?: string;
-  linkedin?: string;
-  github?: string;
+  twitter?: string;
+  instagram?: string;
+  tumblr?: string;
+  equipo_trabajo?: any[];
 }
-
-

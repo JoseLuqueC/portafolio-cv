@@ -1,41 +1,31 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import { AppRoutingModule } from './app-routing.module';
+import { HttpClientModule } from '@angular/common/http'
 
 import { AppComponent } from './app.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './shared/header/header.component';
-
-import {MatSidenavModule} from '@angular/material/sidenav';
-import {MatButtonModule} from '@angular/material/button';
-import {MatIconModule} from '@angular/material/icon';
-import {MatMenuModule} from '@angular/material/menu';
-import { PortafolioComponent } from './pages/portafolio/portafolio.component';
-import { ProjectsComponent } from './pages/projects/projects.component';
-import { ContactComponent } from './pages/contact/contact.component';
-import { AppRoutingModule } from './app-routing.module';
 import { FooterComponent } from './shared/footer/footer.component';
+import { PortafolioComponent } from './pages/portafolio/portafolio.component';
 import { AboutComponent } from './pages/about/about.component';
-import { HttpClientModule } from '@angular/common/http';
+import { ItemComponent } from './pages/item/item.component';
+import { SearchComponent } from './pages/search/search.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    PortafolioComponent,
-    ProjectsComponent,
-    ContactComponent,
     FooterComponent,
-    AboutComponent
+    PortafolioComponent,
+    AboutComponent,
+    ItemComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule,
-    MatSidenavModule,
-    MatButtonModule,
-    MatIconModule,
-    MatMenuModule,
     HttpClientModule
   ],
   providers: [],
