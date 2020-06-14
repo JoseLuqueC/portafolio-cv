@@ -8,9 +8,9 @@ export interface Producto {
 export interface DescripcionProducto{
   categoria: string;
   desc1: string;
-  desc2: string;
+  cliente: string;
   producto: string;
-  resumen: string;
   subtitulo1: string;
-  subtitulo2: string;
+  fecha: string;
+  url:string;
 }
