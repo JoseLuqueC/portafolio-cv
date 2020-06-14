@@ -1282,7 +1282,7 @@ body {
   -webkit-align-items: flex-end;
   -ms-flex-align: end;
           align-items: flex-end;
-  height: 100vh;
+  height: 130vh;
   padding-bottom: 1.5rem;
   width: 100%;
 }
@@ -1345,6 +1345,8 @@ body {
 .item-inside__meta .rk-portfolio-category {
   position: relative;
   z-index: 2;
+  background-color: rgba(3, 3, 3, .6);
+  border-radius: 12px;
 }
 
 .inner-box-1 {
@@ -2061,7 +2063,7 @@ body {
     -webkit-justify-content: center;
     -ms-flex-pack: center;
             justify-content: center;
-    background-color: rgba(255, 255, 255, .95);
+    background-color: rgba(3, 3, 3, .95);
     overflow: auto;
   }
   #mobile-menu:checked ~ .rk-topbar .rk-menu {
