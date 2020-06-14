@@ -17,10 +17,11 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   padding-right: 10px;
 }
 
-img{
+.perfilImage{
   height: 400px !important;
   border-radius: 10px;
 }
+
 
 .conocimiento{
  margin-left: 40px;
