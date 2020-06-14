@@ -22,6 +22,10 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   border-radius: 10px;
 }
 
+.img{
+  height: auto;
+}
+
 
 .conocimiento{
  margin-left: 40px;
