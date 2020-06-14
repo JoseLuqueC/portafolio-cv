@@ -11,3 +11,8 @@ export interface InfoPagina{
   github?: string;
   equipo_trabajo?: any[];
 }
+
+export interface curriculum{
+  conocimiento?: string[];
+  descripcion1?: string;
+}

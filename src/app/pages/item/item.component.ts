@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { ProductosService } from '../../services/productos.service';
-import { DescripcionProducto } from '../../interfaces/producto.interface';
+import { DescripcionProducto, Producto } from '../../interfaces/producto.interface';
 
 @Component({
   selector: 'app-item',
@@ -12,6 +12,8 @@ export class ItemComponent implements OnInit {
 
   producto: DescripcionProducto;
   id: string;
+  backend: string;
+  frontend: string;
 
   constructor( private route: ActivatedRoute,
               public productosService: ProductosService ) { }
@@ -22,6 +24,8 @@ export class ItemComponent implements OnInit {
       .subscribe( (producto: DescripcionProducto) => {
         this.producto = producto;
         this.id = parametros['id'];
+        this.frontend = producto.url.frontend;
+        this.backend = producto.url.backend;
       });
     });
   }

@@ -12,5 +12,10 @@ export interface DescripcionProducto{
   producto: string;
   subtitulo1: string;
   fecha: string;
-  url:string;
+  url:url;
+}
+
+export interface url{
+  frontend: string;
+  backend?: string;
 }

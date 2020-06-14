@@ -8,3 +8,11 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 #logo{
   font-size: 4ex;
 }
+
+.sticker{
+  background-color: gray;
+  border-radius: 10px;
+  display: inline;
+  padding-left: 10px;
+  padding-right: 10px;
+}

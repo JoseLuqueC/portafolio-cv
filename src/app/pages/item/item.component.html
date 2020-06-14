@@ -10,11 +10,14 @@
     <div class="ae-grid ae-grid--collapse rk-portfolio-info ">
       <div class="ae-grid__item item-lg-12 au-xs-ta-center au-lg-ta-right rk-portfolio-details">
         <p class="rk-portfolio-inner-client ">
-          <span class="ae-lambda">Client: </span>
+          <span class="ae-lambda">En: </span>
           <span class="ae-u-bolder">{{producto.cliente}}</span>
         </p>
-        <p class="au-underline rk-portfolio-inner-website ">
-          <a href="{{producto.url}}" target="_blank" class="ae-kappa">{{producto.url}}</a>
+        <p  class="au-underline rk-portfolio-inner-website ">
+          <a href="{{producto.url.frontend}}" target="_blank" class="ae-kappa">{{producto.url.frontend}}</a>
+        </p>
+        <p *ngIf="backend!=''" class="au-underline rk-portfolio-inner-website ">
+          <a href="{{producto.url.backend}}" target="_blank" class="ae-kappa">{{producto.url.backend}}</a>
         </p>
         <p class="ae-kappa ae-u-bold rk-portfolio-inner-date ">{{producto.fecha}}</p>
       </div>
