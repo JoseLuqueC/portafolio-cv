@@ -2,7 +2,7 @@
 <div class="ae-grid au-xs-ta-center au-mb-4">
 
   <div *ngFor="let persona of _infoEquipo.equipo" class="animate__animated animate__fadeIn animate__fast animate__delay-1s ae-grid__item item-lg-12 ae-kappa au-mb-3">
-    <img src="{{persona.url}}" alt="" class="au-mb-3">
+    <img class="perfilImage" src="{{persona.url}}" alt="" class="au-mb-3">
     <h5 class="ae-u-bolder au-mt-2">{{persona.nombre}}</h5>
     <p class="ae-u-bolder au-mb-3">{{persona.subtitulo}}</p>
     <p class="au-lg-ta-center au-mb-3 au-pl-4 au-pr-4">{{persona.frase}}</p>
@@ -17,7 +17,7 @@
   </div>
 </div>
 
-<div class="ae-grid ae-grid--alt au-xs-ptp-1">
+<div class="ae-grid ae-grid--alt au-xs-ptp-1 conocimiento">
   <h4 class="ae-u-boldest item-lg-12">Algunos conocimientos</h4>
   <div *ngFor="let conocimiento of _infoEquipo.curriculum.conocimiento" class="ae-grid__item--alt item-lg-4">
     <p class="sticker au-lh-3">{{conocimiento}}</p>
