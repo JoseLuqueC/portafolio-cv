@@ -2,29 +2,29 @@
   <header [ngStyle]="{'background-image': 'url(assets/productos/'+id+'/main.jpg)'}"
           class="animate__animated animate__fadeIn animate__slow rk-portfolio-cover  item-inside-1">
     <div class="item-inside__meta">
-      <h1 class="ae-u-bolder rk-portfolio-title ">{{producto.producto}}</h1>
-      <p class="ae-theta rk-portfolio-category ">{{producto.categoria}}</p>
+      <h1 class="ae-u-bolder rk-portfolio-title title">{{producto.producto}}</h1>
+      <p class="ae-theta rk-portfolio-category paragraph">{{producto.categoria}}</p>
     </div>
   </header>
   <div class="ae-container-fluid">
     <div class="ae-grid ae-grid--collapse rk-portfolio-info ">
       <div class="ae-grid__item item-lg-12 au-xs-ta-center au-lg-ta-right rk-portfolio-details">
         <p class="rk-portfolio-inner-client ">
-          <span class="ae-lambda">En: </span>
-          <span class="ae-u-bolder">{{producto.cliente}}</span>
+          <span class="ae-lambda paragraph">En: </span>
+          <span class="ae-u-bolder paragraph">{{producto.cliente}}</span>
         </p>
-        <p  class="au-underline rk-portfolio-inner-website ">
+        <p  class="au-underline rk-portfolio-inner-website paragraph">
           <a href="{{producto.url.frontend}}" target="_blank" class="ae-kappa">{{producto.url.frontend}}</a>
         </p>
-        <p *ngIf="backend!=''" class="au-underline rk-portfolio-inner-website ">
+        <p *ngIf="backend!=''" class="au-underline rk-portfolio-inner-website paragraph">
           <a href="{{producto.url.backend}}" target="_blank" class="ae-kappa">{{producto.url.backend}}</a>
         </p>
-        <p class="ae-kappa ae-u-bold rk-portfolio-inner-date ">{{producto.fecha}}</p>
+        <p class="ae-kappa ae-u-bold rk-portfolio-inner-date paragraph">{{producto.fecha}}</p>
       </div>
     </div>
   </div>
   <div class="ae-container-fluid ae-container-fluid--inner rk-portfolio--inner">
-        <p class="ae-eta">{{producto.desc1}}</p>
-        <p class="ae-eta">{{producto.subtitulo1}}</p>
+        <p class="ae-eta paragraph">{{producto.desc1}}</p>
+        <p class="ae-eta paragraph">{{producto.subtitulo1}}</p>
   </div>
 </section>

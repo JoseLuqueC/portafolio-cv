@@ -30,3 +30,15 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .conocimiento{
  margin-left: 40px;
 }
+
+.progressBar{
+  margin-bottom: 20px;
+}
+
+.title{
+  font-family: 'Merriweather', serif;
+}
+
+.paragraph{
+  font-family: 'Montserrat', sans-serif; 
+}

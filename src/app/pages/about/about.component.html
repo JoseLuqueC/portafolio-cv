@@ -3,30 +3,30 @@
 
   <div *ngFor="let persona of _infoEquipo.equipo" class="animate__animated animate__fadeIn animate__fast animate__delay-1s ae-grid__item item-lg-12 ae-kappa au-mb-3">
     <img src="{{persona.url}}" alt="" class="au-mb-3 perfilImage">
-    <h5 class="ae-u-bolder au-mt-2">{{persona.nombre}}</h5>
-    <p class="ae-u-bolder au-mb-3">{{persona.subtitulo}}</p>
-    <p class="au-lg-ta-center au-mb-3 au-pl-4 au-pr-4">{{persona.frase}}</p>
-    <a target="_blank" href="mailTo:{{persona.email}}" class="ae-u-bolder au-underline">{{persona.email}}</a>
+    <h5 class="ae-u-bolder au-mt-2 title">{{persona.nombre}}</h5>
+    <p class="ae-u-bolder au-mb-3 paragraph">{{persona.subtitulo}}</p>
+    <p class="au-lg-ta-center au-mb-3 au-pl-4 au-pr-4 paragraph">{{persona.frase}}</p>
+    <a target="_blank" href="mailTo:{{persona.email}}" class="ae-u-bolder au-underline paragraph">{{persona.email}}</a>
   </div>
 
 </div>
 <div *ngFor="let persona of _infoEquipo.equipo" class="ae-grid au-pt-2">
   <div class="ae-grid__item item-lg-8 item-lg--offset-2">
-    <h4 class="ae-u-bolder">Sobre mi</h4>
-    <p *ngIf="persona.descripcion1">{{persona.descripcion1}}</p>
+    <h4 class="ae-u-bolder title">Sobre mi</h4>
+    <p class="paragraph" *ngIf="persona.descripcion1">{{persona.descripcion1}}</p>
   </div>
 </div>
 
 <div class="ae-grid ae-grid--alt au-xs-ptp-1 conocimiento">
-  <h4 class="ae-u-boldest item-lg-12">Algunos conocimientos</h4>
+  <h4 class="ae-u-boldest item-lg-12 title">Algunos conocimientos</h4>
   <div *ngFor="let conocimiento of _infoEquipo.conocimiento" class="ae-grid__item--alt item-lg-4">
-    <a target="_blank" href="{{conocimiento.ref}}" class="sticker au-lh-3">{{conocimiento.nombre}}</a>
+    <a target="_blank" href="{{conocimiento.ref}}" class="sticker au-lh-3 paragraph">{{conocimiento.nombre}}</a>
     <div class="w3-light-grey w3-round-xlarge">
       <div class="w3-container w3-blue w3-round-xlarge progressBar" style="width:{{conocimiento.valor}}">{{conocimiento.valor}}</div>
     </div>
   </div>
 </div>
-<p class="au-flex au-pt-4 group-buttons"><a routerLink="home" class="au-mt-4 arrow-button arrow-button--right arrow-button--out">View Our Portfolio<span class="arrow-cont">
+<p class="au-flex au-pt-4 group-buttons paragraph"><a routerLink="home" class="au-mt-4 arrow-button arrow-button--right arrow-button--out">View Our Portfolio<span class="arrow-cont">
       <svg>
         <use xlink:href="assets/img/symbols.svg#arrow"></use>
       </svg></span></a></p>

@@ -13,7 +13,7 @@ export interface InfoPagina{
 }
 
 export interface conocimiento{
-  nombre?: string;
-  valor?: string;
+  nombre: string;
+  valor: string;
   ref?: string;
 }
