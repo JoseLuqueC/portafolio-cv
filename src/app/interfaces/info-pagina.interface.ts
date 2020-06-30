@@ -12,7 +12,7 @@ export interface InfoPagina{
   equipo_trabajo?: any[];
 }
 
-export interface curriculum{
-  conocimiento?: string[];
-  descripcion1?: string;
+export interface conocimiento{
+  nombre?: string;
+  valor?: string;
 }

@@ -10,17 +10,20 @@
   </div>
 
 </div>
-<div class="ae-grid au-pt-2">
+<div *ngFor="let persona of _infoEquipo.equipo" class="ae-grid au-pt-2">
   <div class="ae-grid__item item-lg-8 item-lg--offset-2">
     <h4 class="ae-u-bolder">Sobre mi</h4>
-    <p *ngIf="_infoEquipo.curriculum.descripcion1">{{_infoEquipo.curriculum.descripcion1}}</p>
+    <p *ngIf="persona.descripcion1">{{persona.descripcion1}}</p>
   </div>
 </div>
 
 <div class="ae-grid ae-grid--alt au-xs-ptp-1 conocimiento">
   <h4 class="ae-u-boldest item-lg-12">Algunos conocimientos</h4>
-  <div *ngFor="let conocimiento of _infoEquipo.curriculum.conocimiento" class="ae-grid__item--alt item-lg-4">
-    <p class="sticker au-lh-3">{{conocimiento}}</p>
+  <div *ngFor="let conocimiento of _infoEquipo.conocimiento" class="ae-grid__item--alt item-lg-4">
+    <p class="sticker au-lh-3">{{conocimiento.nombre}}</p>
+    <div class="w3-light-grey w3-round-xlarge">
+      <div class="w3-container w3-blue w3-round-xlarge progressBar" style="width:{{conocimiento.valor}}">{{conocimiento.valor}}</div>
+    </div>
   </div>
 </div>
 <p class="au-flex au-pt-4 group-buttons"><a routerLink="home" class="au-mt-4 arrow-button arrow-button--right arrow-button--out">View Our Portfolio<span class="arrow-cont">

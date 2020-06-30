@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { InfoPagina, curriculum } from '../interfaces/info-pagina.interface';
+import { InfoPagina, conocimiento } from '../interfaces/info-pagina.interface';
 
 @Injectable({
   providedIn: 'root'
@@ -10,12 +10,12 @@ export class InfoPaginaService {
   info: InfoPagina = {};
   cargada = false;
   equipo: any[] = [];
-  curriculum: curriculum = {};
+  conocimiento: conocimiento [] = [];
 
   constructor( private http: HttpClient ) { 
     this.cargarInfo();
     this.cargarEquipo();
-    this.cargarCurriculum();
+    this.cargarConocimiento();
   }
 
   private cargarInfo(){
@@ -33,10 +33,11 @@ export class InfoPaginaService {
     });
   }
 
-  private cargarCurriculum(){
-    this.http.get('https://joseluqueweb.firebaseio.com/curriculum.json')
-    .subscribe((resp: any) =>{
-      this.curriculum = resp;
+  private cargarConocimiento(){
+    this.http.get('https://joseluqueweb.firebaseio.com/conocimientos.json')
+    .subscribe((resp: any[]) =>{
+      this.conocimiento = resp;
+      console.log(resp);
     });
   }
 
