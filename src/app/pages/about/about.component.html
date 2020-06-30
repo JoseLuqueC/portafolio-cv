@@ -20,7 +20,7 @@
 <div class="ae-grid ae-grid--alt au-xs-ptp-1 conocimiento">
   <h4 class="ae-u-boldest item-lg-12">Algunos conocimientos</h4>
   <div *ngFor="let conocimiento of _infoEquipo.conocimiento" class="ae-grid__item--alt item-lg-4">
-    <p class="sticker au-lh-3">{{conocimiento.nombre}}</p>
+    <a target="_blank" href="{{conocimiento.ref}}" class="sticker au-lh-3">{{conocimiento.nombre}}</a>
     <div class="w3-light-grey w3-round-xlarge">
       <div class="w3-container w3-blue w3-round-xlarge progressBar" style="width:{{conocimiento.valor}}">{{conocimiento.valor}}</div>
     </div>
