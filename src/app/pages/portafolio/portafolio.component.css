@@ -1,0 +1,11 @@
+@media (min-width: 0) {
+  .item-meta {
+    opacity:1;
+    background-color: rgba(255, 255, 255, 0.45);
+  }
+}
+@media (min-width: 577px) {
+  .item-meta {
+    opacity: 0;
+  }
+}
