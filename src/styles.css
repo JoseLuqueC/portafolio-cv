@@ -17,9 +17,30 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   padding-right: 10px;
 }
 
-.perfilImage{
-  height: 400px !important;
-  border-radius: 10px;
+
+
+@media (min-width: 0) {
+  .perfilImage{
+    height: 250px;
+    border-radius: 10px;
+    margin: 10px;
+  }
+}
+@media (min-width: 350px) {
+  .perfilImage{
+    height: 300px !important;
+    
+  }
+}
+@media (min-width: 576px) {
+  .perfilImage{
+    height: 350px !important;
+  }
+}
+@media (min-width: 768px) {
+  .perfilImage{
+    height: 380px !important;
+  }
 }
 
 .img{
