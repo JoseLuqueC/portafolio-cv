@@ -16,13 +16,13 @@
         <nav class="rk-navigation">
           <ul class="rk-menu">
             <li routerLinkActive="active" class="rk-menu__item">
-              <a routerLink="home" class="rk-menu__link title">Home</a>
+              <a id="rk-menu__link" routerLink="home" class="rk-menu__link title">Home</a>
             </li>
             <li routerLinkActive="active" class="rk-menu__item">
-              <a routerLink="about" class="rk-menu__link title">About</a>
+              <a id="rk-menu__link" routerLink="about" class="rk-menu__link title">About</a>
             </li>
           </ul>
-          <div class="rk-search">
+          <!-- <div class="rk-search">
             <input type="text" 
                     (keyup.enter)="buscarProducto(txtBuscar.value)"
                     placeholder="Buscar..." id="urku-search" class="rk-search-field"
@@ -32,7 +32,7 @@
                 <use xlink:href="assets/img/symbols.svg#icon-search"></use>
               </svg>
             </label>
-          </div>
+          </div> -->
         </nav>
       </div>
     </header>
