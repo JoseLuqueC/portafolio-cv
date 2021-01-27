@@ -27,7 +27,7 @@
       sentí frustrado, lo dejé un poco de lado y comencé a estudiar redes y comunicaciones (CCNA 1 y 2 de Cisco),
       posteriormente en 2019 tuve la oportunidad de trabajar en una empresa de desarrollo de aplicaciones móviles donde
       conocí de MEAN stack, PHP, Git, Android e incluso GraphQL.</p>
-    <p class="paragraph">Decidí mudar mi recidencia a España, la cual es mi segundo país como colombo-español que soy,
+    <p class="paragraph">Decidí mudar mi recidencia a España, la cual es mi segundo país como Colombiano - Español que soy,
       debido a la pandemia, mis planes se vieron frustrados y además la empresa quebró en abril del mismo año.</p>
     <p class="paragraph">Actualmente me capacito por Internet tomando cursos de Udemy y YouTube, reafirmando
       mis bases de HTML5, CSS3, javascript y PHP (y demás), trabajo como Consultor de desarrollo JR en XRM Services,
@@ -39,9 +39,9 @@
 <div class="ae-grid ae-grid--alt au-xs-ptp-1 conocimiento">
   <h4 class="ae-u-boldest item-lg-12 title">Algunos conocimientos</h4>
   <div *ngFor="let conocimiento of _infoEquipo.conocimiento" class="ae-grid__item--alt item-lg-4">
-    <a target="_blank" href="{{conocimiento.ref}}"
-      class="tooltip sticker au-lh-3 paragraph">{{conocimiento.nombre}}<span class="tooltiptext">Saber más...</span></a>
-
+    <a target="_blank" href="{{conocimiento.ref}}" class="tooltip sticker au-lh-3 paragraph">{{conocimiento.nombre}}
+      <span class="tooltiptext">Saber más...</span>
+    </a>
     <div class="w3-light-grey w3-round-xlarge">
       <div class="w3-container w3-blue w3-round-xlarge progressBar" style="width:{{conocimiento.valor}}">
         {{conocimiento.valor}}</div>

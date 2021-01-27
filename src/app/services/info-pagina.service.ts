@@ -37,7 +37,7 @@ export class InfoPaginaService {
     this.http.get('https://joseluqueweb.firebaseio.com/conocimientos.json')
     .subscribe((resp: any[]) =>{
       this.conocimiento = resp;
-      console.log(resp);
+      //console.log(resp);
     });
   }
 
