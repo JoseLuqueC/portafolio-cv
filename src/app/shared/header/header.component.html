@@ -11,15 +11,15 @@
           <use xlink:href="assets/img/symbols.svg#bar"></use>
         </svg>
       </label>
+
       <div class="ae-container-fluid rk-topbar">
-        
         <h1 class="rk-logo title"><a routerLink="home">{{_info.info.titulo}}</a></h1> 
-        <nav class="rk-navigation">
+        <nav class="rk-navigation" id="rk-navigation">
           <ul class="rk-menu">
-            <li routerLinkActive="active" class="rk-menu__item">
+            <li id="rk-menu__item1" routerLinkActive="active" class="rk-menu__item">
               <a id="rk-menu__link" routerLink="home" class="rk-menu__link title">Inicio</a>
             </li>
-            <li routerLinkActive="active" class="rk-menu__item">
+            <li id="rk-menu__item2" routerLinkActive="active" class="rk-menu__item">
               <a id="rk-menu__link" routerLink="about" class="rk-menu__link title">Sobre mi</a>
             </li>
           </ul>
