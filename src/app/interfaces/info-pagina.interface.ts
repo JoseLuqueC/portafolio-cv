@@ -18,3 +18,9 @@ export interface conocimiento{
   ref?: string;
   img?: string;
 }
+
+export interface cursos{
+  titulo: string;
+  descripcion?: string;
+  img?: string;
+}

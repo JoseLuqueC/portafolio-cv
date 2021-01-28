@@ -36,7 +36,7 @@ export class ProductosService {
   getInfoConocimiento(id: string){
     return this.http.get(`https://joseluqueweb.firebaseio.com/info-conocimiento/${id}.json`);
   }
-
+  
   buscarProducto(termino: string){
 
     if(this.productos.length === 0){
