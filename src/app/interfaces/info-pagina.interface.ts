@@ -16,4 +16,5 @@ export interface conocimiento{
   nombre: string;
   valor: string;
   ref?: string;
+  img?: string;
 }

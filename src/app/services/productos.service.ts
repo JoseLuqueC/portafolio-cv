@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Producto } from '../interfaces/producto.interface';
+import { InfoConocimiento } from '../interfaces/info-conocimiento.interface';
 
 @Injectable({
   providedIn: 'root'
@@ -8,7 +9,8 @@ import { Producto } from '../interfaces/producto.interface';
 export class ProductosService {
 
   cargando = true;
-  productos: Producto[] = []; 
+  productos: Producto[] = [];
+  infoConocimiento: InfoConocimiento[] = []; 
   productosFiltrados: Producto[] = [];
   constructor( private http: HttpClient ) { 
     this.cargarProductos();
@@ -27,8 +29,12 @@ export class ProductosService {
     });
   }
 
+
   getProducto(id: string){
     return this.http.get(`https://joseluqueweb.firebaseio.com/productos/${id}.json`);
+  }
+  getInfoConocimiento(id: string){
+    return this.http.get(`https://joseluqueweb.firebaseio.com/info-conocimiento/${id}.json`);
   }
 
   buscarProducto(termino: string){

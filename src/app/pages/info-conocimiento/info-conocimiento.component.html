@@ -1,0 +1,22 @@
+<section *ngIf="infoConocimiento" class="ae-container-fluid ae-container-fluid--full">
+    <header class="animate__animated animate__fadeIn animate__slow rk-portfolio-cover  item-inside-1">
+      <div class="item-inside__meta">
+        <h1 class="ae-u-bolder rk-portfolio-title title">{{infoConocimiento.titulo}}</h1>
+        <img src="{{infoConocimiento.img}}" alt="imagen">
+      </div>
+    </header>
+   
+    <div class="ae-container-fluid ae-container-fluid--inner rk-portfolio--inner">
+          <p class="ae-eta paragraph">{{infoConocimiento.info}}</p>
+    </div>
+    <div class="ae-container-fluid">
+        <div class="ae-grid ae-grid--collapse rk-portfolio-info ">
+          <div class="ae-grid__item item-lg-12 au-xs-ta-center au-lg-ta-right rk-portfolio-details">
+            <span class="ae-lambda paragraph">Fuente: </span>
+            <p  class="au-underline rk-portfolio-inner-website paragraph">
+              <a href="{{infoConocimiento.fuente}}" target="_blank" class="ae-kappa">{{infoConocimiento.fuente}}</a>
+            </p>
+          </div>
+        </div>
+    </div>
+  </section>
