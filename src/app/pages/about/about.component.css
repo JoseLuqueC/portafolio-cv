@@ -32,7 +32,7 @@
   }
 
   img.zoom {
-    width: 350px;
+    /*width: 350px;*/
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     -o-transition: all .2s ease-in-out;
@@ -42,10 +42,12 @@
     cursor: pointer;
 }
  
-img.zoom:hover {
-    -webkit-transform: scale(1.8); 
-    -moz-transform: scale(1.8);
-    -o-transform: scale(1.8);
-    transform: scale(1.8);
+@media (min-width: 1024px) {
+  img.zoom:hover {
+    -webkit-transform: scale(1.35); 
+    -moz-transform: scale(1.35);
+    -o-transform: scale(1.35);
+    transform: scale(1.35);
     z-index: 10;
+  }
 }
