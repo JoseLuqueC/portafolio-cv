@@ -7,10 +7,10 @@ import { InfoPaginaService } from '../../services/info-pagina.service';
   styleUrls: ['./about.component.css']
 })
 export class AboutComponent implements OnInit {
-
+  
   constructor(public _infoEquipo: InfoPaginaService) { }
 
   ngOnInit(): void {
   }
-
+  
 }
