@@ -1,0 +1,15 @@
+<h1 class="ae-u-boldest item-lg-12 title">Noticias de Interes</h1>
+<div class="ae-grid ae-grid--alt au-xs-ptp-1">
+    <div *ngFor="let noticia of _infoEquipo.noticias" class="ae-grid__item--alt item-lg-4 card">
+      <span class="au-lh-3 paragraph">
+        <a href="{{noticia.ref}}">
+            <img src="{{noticia.img}}" alt="imagen noticia">
+            <div class="container">
+                <h4><b>{{noticia.titulo}}</b></h4> 
+                <p>{{noticia.desc}}</p> 
+                <p *ngIf="noticia.precio=='Gratis'" class="paragraph">{{noticia.precio}}</p>
+            </div>
+        </a>
+      </span>
+    </div>
+</div>

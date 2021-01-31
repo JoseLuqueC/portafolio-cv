@@ -12,6 +12,7 @@ import { AboutComponent } from './pages/about/about.component';
 import { ItemComponent } from './pages/item/item.component';
 import { SearchComponent } from './pages/search/search.component';
 import { InfoConocimientoComponent } from './pages/info-conocimiento/info-conocimiento.component';
+import { NoticiasComponent } from './pages/noticias/noticias.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { InfoConocimientoComponent } from './pages/info-conocimiento/info-conoci
     AboutComponent,
     ItemComponent,
     SearchComponent,
-    InfoConocimientoComponent
+    InfoConocimientoComponent,
+    NoticiasComponent
   ],
   imports: [
     BrowserModule,

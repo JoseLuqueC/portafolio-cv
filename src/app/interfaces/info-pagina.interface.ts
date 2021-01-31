@@ -24,3 +24,8 @@ export interface cursos{
   descripcion?: string;
   img?: string;
 }
+export interface noticias{
+  titulo: string;
+  descripcion?: string;
+  img?: string;
+}
