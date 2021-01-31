@@ -54,7 +54,7 @@ export class InfoPaginaService {
   private cargarNoticias(){
     this.http.get('https://joseluqueweb.firebaseio.com/noticias.json')
     .subscribe((resp: any[]) =>{
-      this.noticias = resp;
+      this.noticias = resp.reverse();
     });
   }
 
