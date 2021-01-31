@@ -13,11 +13,11 @@
           <span class="ae-lambda paragraph">En: </span>
           <span class="ae-u-bolder paragraph">{{producto.cliente}}</span>
         </p>
-        <p  class="au-underline rk-portfolio-inner-website paragraph">
-          <a href="{{producto.url.frontend}}" target="_blank" class="ae-kappa">{{producto.url.frontend}}</a>
+        <p  class="rk-portfolio-inner-website paragraph">
+          Front-end <a href="{{producto.url.frontend}}" target="_blank" class="au-underline ae-kappa">Clic aquí</a>
         </p>
-        <p *ngIf="backend!=''" class="au-underline rk-portfolio-inner-website paragraph">
-          <a href="{{producto.url.backend}}" target="_blank" class="ae-kappa">{{producto.url.backend}}</a>
+        <p *ngIf="backend" class="rk-portfolio-inner-website paragraph">
+          Back-end <a href="{{producto.url.backend}}" target="_blank" class="au-underline ae-kappa">Clic aquí</a>
         </p>
         <p class="ae-kappa ae-u-bold rk-portfolio-inner-date paragraph">{{producto.fecha}}</p>
       </div>
