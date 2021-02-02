@@ -5,6 +5,8 @@ import { Router } from '@angular/router';
 import { AuthService } from '../../services/auth.service';
 import { Observable } from 'rxjs';
 
+import Swal from 'sweetalert2'
+
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -20,7 +22,6 @@ export class HeaderComponent implements OnInit {
               private authSvc: AuthService) { }
 
   async ngOnInit() {
-    console.log('nav');
     this.user = await this.authSvc.getCurrentUser();
     if(this.user){
       this.isLogged = true;
@@ -37,7 +38,23 @@ export class HeaderComponent implements OnInit {
   async onLogout(){
     try{
       await this.authSvc.logout();
-      this.router.navigate(['/home']);
+      this.router.navigate(['/login']);
+      const Toast = Swal.mixin({
+        toast: true,
+        position: 'top-end',
+        showConfirmButton: false,
+        timer: 1500,
+        timerProgressBar: true,
+        didOpen: (toast) => {
+          toast.addEventListener('mouseenter', Swal.stopTimer)
+          toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+      })
+      
+      Toast.fire({
+        icon: 'success',
+        title: 'Se ha cerrado sesion correctamente'
+      })
     }
     catch(error){
       console.log(error);

@@ -18,6 +18,8 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { AngularFireModule } from '@angular/fire';
 import { AngularFireAuthModule } from '@angular/fire/auth'
 import { environment } from 'src/environments/environment';
+import { AuthGuard } from './guards/auth.guard';
+import { AdminComponent } from './pages/admin/admin.component';
 
 
 @NgModule({
@@ -31,7 +33,8 @@ import { environment } from 'src/environments/environment';
     SearchComponent,
     InfoConocimientoComponent,
     NoticiasComponent,
-    LoginComponent
+    LoginComponent,
+    AdminComponent
   ],
   imports: [
     BrowserModule,
@@ -41,7 +44,7 @@ import { environment } from 'src/environments/environment';
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireAuthModule
   ],
-  providers: [],
+  providers: [AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

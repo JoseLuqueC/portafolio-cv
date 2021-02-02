@@ -7,9 +7,12 @@ import { ItemComponent } from './pages/item/item.component';
 import { InfoConocimientoComponent } from './pages/info-conocimiento/info-conocimiento.component';
 import { SearchComponent } from './pages/search/search.component';
 import { LoginComponent } from './pages/login/login.component';
+import { AuthGuard } from './guards/auth.guard';
+import { AdminComponent } from './pages/admin/admin.component';
 
 const app_routes: Routes = [
   {path: 'home', component: PortafolioComponent},
+  {path: 'admin', component:AdminComponent, canActivate:[AuthGuard]},
   {path: 'about', component:AboutComponent},
   {path: 'news', component:NoticiasComponent},
   {path: 'login', component:LoginComponent},
