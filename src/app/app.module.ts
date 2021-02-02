@@ -13,6 +13,11 @@ import { ItemComponent } from './pages/item/item.component';
 import { SearchComponent } from './pages/search/search.component';
 import { InfoConocimientoComponent } from './pages/info-conocimiento/info-conocimiento.component';
 import { NoticiasComponent } from './pages/noticias/noticias.component';
+import { LoginComponent } from './pages/login/login.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { AngularFireModule } from '@angular/fire';
+import { AngularFireAuthModule } from '@angular/fire/auth'
+import { environment } from 'src/environments/environment';
 
 
 @NgModule({
@@ -25,12 +30,16 @@ import { NoticiasComponent } from './pages/noticias/noticias.component';
     ItemComponent,
     SearchComponent,
     InfoConocimientoComponent,
-    NoticiasComponent
+    NoticiasComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFireAuthModule
   ],
   providers: [],
   bootstrap: [AppComponent]

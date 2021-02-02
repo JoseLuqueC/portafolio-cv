@@ -6,11 +6,13 @@ import { NoticiasComponent } from './pages/noticias/noticias.component';
 import { ItemComponent } from './pages/item/item.component';
 import { InfoConocimientoComponent } from './pages/info-conocimiento/info-conocimiento.component';
 import { SearchComponent } from './pages/search/search.component';
+import { LoginComponent } from './pages/login/login.component';
 
 const app_routes: Routes = [
   {path: 'home', component: PortafolioComponent},
   {path: 'about', component:AboutComponent},
   {path: 'news', component:NoticiasComponent},
+  {path: 'login', component:LoginComponent},
   {path: 'item/:id', component: ItemComponent},
   {path: 'info/:id', component: InfoConocimientoComponent},
   {path: 'search/:termino', component: SearchComponent},

@@ -16,17 +16,27 @@
       <div class="ae-container-fluid rk-topbar">
         <h1 class="rk-logo title"><a routerLink="home">{{_info.info.titulo}}</a></h1> 
         <nav class="rk-navigation" id="rk-navigation">
-          <ul class="rk-menu">
-            <li  routerLinkActive="active" class="rk-menu__item">
-              <a id="rk-menu__link" routerLink="home" class="rk-menu__link title">Inicio</a>
-            </li>
-            <li  routerLinkActive="active" class="rk-menu__item">
-              <a id="rk-menu__link" routerLink="about" class="rk-menu__link title">Sobre mi</a>
-            </li>
+          <ul class="rk-menu" *ngIf="user$ | async as user; else login">
             <li routerLinkActive="active" class="rk-menu__item">
-              <a id="rk-menu__link" routerLink="news" class="rk-menu__link title">Noticias</a>
+              <a id="rk-menu__link" routerLink="login" (click)="onLogout()" class="rk-menu__link title">Logout</a>
             </li>
           </ul>
+          <ng-template #login>
+            <ul class="rk-menu">
+              <li  routerLinkActive="active" class="rk-menu__item">
+                <a id="rk-menu__link" routerLink="home" class="rk-menu__link title">Inicio</a>
+              </li>
+              <li  routerLinkActive="active" class="rk-menu__item">
+                <a id="rk-menu__link" routerLink="about" class="rk-menu__link title">Sobre mi</a>
+              </li>
+              <li routerLinkActive="active" class="rk-menu__item">
+                <a id="rk-menu__link" routerLink="news" class="rk-menu__link title">Noticias</a>
+              </li>
+              <li routerLinkActive="active" class="rk-menu__item">
+                <a id="rk-menu__link" routerLink="login" class="rk-menu__link title">Login</a>
+              </li>
+            </ul>
+          </ng-template>
         </nav>
       </div>
     </header>
