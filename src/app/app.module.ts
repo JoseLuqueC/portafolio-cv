@@ -20,6 +20,8 @@ import { AngularFireAuthModule } from '@angular/fire/auth'
 import { environment } from 'src/environments/environment';
 import { AuthGuard } from './guards/auth.guard';
 import { AdminComponent } from './pages/admin/admin.component';
+import { ContactComponent } from './pages/contact/contact.component';
+import { NgxPaginationModule } from 'ngx-pagination';
 
 
 @NgModule({
@@ -34,7 +36,8 @@ import { AdminComponent } from './pages/admin/admin.component';
     InfoConocimientoComponent,
     NoticiasComponent,
     LoginComponent,
-    AdminComponent
+    AdminComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
@@ -42,7 +45,8 @@ import { AdminComponent } from './pages/admin/admin.component';
     HttpClientModule,
     ReactiveFormsModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
-    AngularFireAuthModule
+    AngularFireAuthModule,
+    NgxPaginationModule
   ],
   providers: [AuthGuard],
   bootstrap: [AppComponent]

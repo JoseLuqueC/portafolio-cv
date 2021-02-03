@@ -13,6 +13,7 @@ export class InfoPaginaService {
   conocimiento: conocimiento [] = [];
   cursos: cursos [] = [];
   noticias: noticias [] = [];
+ 
 
   constructor( private http: HttpClient ) { 
     this.cargarInfo();
@@ -57,6 +58,5 @@ export class InfoPaginaService {
       this.noticias = resp.reverse();
     });
   }
-
 
 }

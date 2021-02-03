@@ -1,1 +1,19 @@
-<p>admin works!</p>
+<table class="table table-dark table-striped">
+    <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Nombre</th>
+          <th scope="col">Asunto</th>
+          <th scope="col">Mensaje</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let email of collection.data | paginate: config">
+          <th scope="row">{{email.nombre}}</th>
+          <td>{{email.nombre}}</td>
+          <td>{{email.asunto}}</td>
+          <td>{{email.mensaje}}</td>
+        </tr>
+      </tbody>
+  </table>
+  <pagination-controls (pageChange)="pageChanged($event)"></pagination-controls>

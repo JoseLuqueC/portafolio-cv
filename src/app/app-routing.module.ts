@@ -9,11 +9,13 @@ import { SearchComponent } from './pages/search/search.component';
 import { LoginComponent } from './pages/login/login.component';
 import { AuthGuard } from './guards/auth.guard';
 import { AdminComponent } from './pages/admin/admin.component';
+import { ContactComponent } from './pages/contact/contact.component';
 
 const app_routes: Routes = [
   {path: 'home', component: PortafolioComponent},
   {path: 'admin', component:AdminComponent, canActivate:[AuthGuard]},
   {path: 'about', component:AboutComponent},
+  {path: 'contact', component:ContactComponent},
   {path: 'news', component:NoticiasComponent},
   {path: 'login', component:LoginComponent},
   {path: 'item/:id', component: ItemComponent},
