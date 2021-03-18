@@ -12,11 +12,11 @@ import { AdminComponent } from './pages/admin/admin.component';
 import { ContactComponent } from './pages/contact/contact.component';
 
 const app_routes: Routes = [
-  {path: 'home', component: PortafolioComponent},
+  {path: 'home', component:NoticiasComponent},
+  {path: 'projects', component: PortafolioComponent},
   {path: 'admin', component:AdminComponent, canActivate:[AuthGuard]},
   {path: 'about', component:AboutComponent},
   {path: 'contact', component:ContactComponent},
-  {path: 'news', component:NoticiasComponent},
   {path: 'login', component:LoginComponent},
   {path: 'item/:id', component: ItemComponent},
   {path: 'info/:id', component: InfoConocimientoComponent},
