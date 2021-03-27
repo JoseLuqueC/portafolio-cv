@@ -1,13 +1,13 @@
 <h1 class="ae-u-boldest item-lg-12 title">Cursos Online</h1>
 <div class="ae-grid ae-grid--alt au-xs-ptp-1">
-    <div *ngFor="let noticia of _infoEquipo.noticias" class="ae-grid__item--alt item-lg-4 card">
+    <div *ngFor="let noticia of _infoEquipo.noticias" class="ae-grid__item--alt item-sm-4 item-lg-3 card">
       <span class="au-lh-3 paragraph">
         <a href="{{noticia.ref}}">
-            <img src="{{noticia.img}}" alt="imagen noticia">
+            <img src="{{noticia.img}}" alt="imagen {{noticia.titulo}}">
             <div class="container">
                 <h4><b>{{noticia.titulo}}</b></h4> 
-                <p>{{noticia.desc}}</p> 
-                <p *ngIf="noticia.precio=='Gratis'" class="paragraph">{{noticia.precio}}</p>
+                <p class="margin-bottom-2-5rem">{{noticia.desc}}</p> 
+                <p *ngIf="noticia.precio=='Gratis'" class="paragraph price">{{noticia.precio}}</p>
             </div>
         </a>
       </span>
