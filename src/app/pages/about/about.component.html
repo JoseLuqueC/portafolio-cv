@@ -8,7 +8,7 @@
     <div class="ae-grid__item item-lg-8 item-lg--offset-2">
       <p class="paragraph">{{persona.frase}}</p>
     </div>
-   <!-- <a target="_blank" href="mailTo:{{persona.email}}" class="ae-u-bolder au-underline paragraph">{{persona.email}}</a>-->
+    <!-- <a target="_blank" href="mailTo:{{persona.email}}" class="ae-u-bolder au-underline paragraph">{{persona.email}}</a>-->
   </div>
 
 </div>
@@ -16,23 +16,34 @@
   <div class="ae-grid__item item-lg-8 item-lg--offset-2">
     <h4 class="ae-u-bolder title">Sobre mi</h4>
     <!-- {{persona.descripcion1}} -->
-    <p class="paragraph" *ngIf="persona.descripcion1">Tecnólogo en sistemas de información promoción 2018 con experiencia en 
+    <p class="paragraph" *ngIf="persona.descripcion1">Tecnólogo en sistemas de información promoción 2018 con
+      experiencia en
       desarrollo web MEAN Stack, Android y PHP7, apasionado por el desarrollo web y
-      móvil.</p>
+      móvil.
+    </p>
     <p class="paragraph">Comencé mis estudios de programación en el 2014, donde descubrí gracias al lenguaje Java SE, mi
       afinidad con la programación. En 2016 empecé a impartir tutorías de POO y MySQL a mis compañeros de universidad de
-      mi mismo semestre e incluso de semestres más avanzados.</p>
+      mi mismo semestre e incluso de semestres más avanzados.
+    </p>
     <p class="paragraph">En 2017 pensé que la programación no era para mi, por algunos problemas técnicos con la
       cantidad de lenguajes que hay actualmente, y al solo saber java, MySQL y lo básico de la programación web, me
       sentí frustrado, lo dejé un poco de lado y comencé a estudiar redes y comunicaciones (CCNA 1 y 2 de Cisco),
-      posteriormente en 2019 tuve la oportunidad de trabajar en una empresa de desarrollo de aplicaciones móviles donde
-      conocí de MEAN stack, PHP, Git, Android e incluso GraphQL.</p>
-    <p class="paragraph">Decidí mudar mi recidencia a España, la cual es mi segundo país como Colombiano - Español que soy,
-      debido a la pandemia mis planes se vieron frustrados y además la empresa quebró en abril del mismo año (2020).</p>
-    <p class="paragraph">Actualmente me capacito por Internet tomando cursos de Udemy y YouTube, reafirmando
-      mis bases de HTML5, CSS3, javascript y PHP (y demás), trabajo como Consultor de desarrollo JR en Intelecto S.A.S. - XRM Services,
-      soy estudiante de ingeniería informática con énfasis en desarrollo de software y tengo una página de Facebook donde
-      comparto información sobre nuevas tecnologías, consejos, cursos y aplicaciones interesantes.</p>
+      posteriormente en 2019 tuve la oportunidad de trabajar en una empresa de desarrollo de aplicaciones móviles por 4 meses, donde
+      conocí de MEAN stack, PHP, Git, Android e incluso GraphQL.
+    </p>
+    <p class="paragraph">Decidí mudar mi recidencia a España, la cual es mi segundo país como Colombiano - Español que
+      soy,
+      debido a la pandemia mis planes se vieron frustrados y además la empresa quebró en abril del mismo año (2020).
+    </p>
+    <p class="paragraph">Me he capacitado por Internet tomando cursos de Udemy y YouTube, reafirmando
+      mis bases de HTML5, CSS3, javascript y PHP (y demás) y trabajé como Consultor de desarrollo JR en Intelecto S.A.S.
+      - XRM Services por 8 meses.
+    </p>
+    <p class="paragraph">Actualmente me capacito por Internet tomando cursos de Udemy sobre Java y Spring por 
+      mi nuevo empleo como Desarrollador TI Sector Protección en Coomeva.
+      Soy estudiante de ingeniería informática con énfasis en desarrollo de software y tengo una página de Facebook
+      donde comparto información sobre nuevas tecnologías, consejos, cursos y aplicaciones interesantes.
+    </p>
   </div>
 </div>
 
@@ -43,7 +54,7 @@
       <span class="tooltiptext">{{conocimiento.nombre}}</span>
       <img *ngIf="conocimiento.img" src="{{conocimiento.img}}" alt="{{conocimiento.nombre}}">
     </a>
-    
+
     <div class="w3-light-grey w3-round-xlarge">
       <div class="w3-container w3-blue w3-round-xlarge progressBar" style="width:{{conocimiento.valor}}">
         {{conocimiento.valor}}</div>
@@ -60,8 +71,7 @@
   </div>
 </div>
 <p class="au-flex au-pt-4 group-buttons paragraph">
-  <a routerLink="home"
-    class="au-mt-4 arrow-button arrow-button--right arrow-button--out">Volver al Portafolio
+  <a routerLink="home" class="au-mt-4 arrow-button arrow-button--right arrow-button--out">Volver al Portafolio
     <span class="arrow-cont">
       <svg>
         <use xlink:href="assets/img/symbols.svg#arrow"></use>
