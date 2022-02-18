@@ -140,5 +140,8 @@
       }
     }
   },
-  "defaultProject": "portafolio-cv"
+  "defaultProject": "portafolio-cv",
+  "cli": {
+    "analytics": "e052f0b0-623a-4738-ab24-9eebc65a0291"
+  }
 }
