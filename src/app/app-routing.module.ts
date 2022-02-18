@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { PortafolioComponent } from './pages/portafolio/portafolio.component';
 import { AboutComponent } from './pages/about/about.component';
-import { NoticiasComponent } from './pages/noticias/noticias.component';
+// import { NoticiasComponent } from './pages/noticias/noticias.component';
 import { ItemComponent } from './pages/item/item.component';
 import { InfoConocimientoComponent } from './pages/info-conocimiento/info-conocimiento.component';
 import { SearchComponent } from './pages/search/search.component';
